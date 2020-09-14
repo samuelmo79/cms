@@ -1,0 +1,42 @@
+{% extends '@Admin/baseAdmin.html.twig' %}
+
+{% block title %}Categorias{% endblock %}
+
+{% block bodyAdmin %}
+    <a href="{{ path('categoria_new') }}" class="btn btn-success btn-sm float-right">Nova Categoria</a>
+    <h2>Categorias</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>DataCadastro</th>
+                <th>DataAtualização</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for categorium in categorias %}
+            <tr>
+                <td>{{ categorium.id }}</td>
+                <td>{{ categorium.nome }}</td>
+                <td>{{ categorium.dataCadastro ? categorium.dataCadastro|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ categorium.dataAtualizacao ? categorium.dataAtualizacao|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('categoria_show', {'id': categorium.id}) }}" class="btn btn-primary btn-sm">Ver</a>
+                    <a href="{{ path('categoria_edit', {'id': categorium.id}) }}" class="btn btn-warning btn-sm">Editar</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">
+                    <div class="alert alert-primary" role="alert">
+                        Nenhum registro encontrado
+                    </div>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

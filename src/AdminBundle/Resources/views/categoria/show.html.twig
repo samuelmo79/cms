@@ -1,0 +1,38 @@
+{% extends '@Admin/baseAdmin.html.twig' %}
+
+{% block title %}Categoria{% endblock %}
+
+{% block bodyAdmin %}
+    <h1>Categoria</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ categorium.id }}</td>
+            </tr>
+            <tr>
+                <th>Nome</th>
+                <td>{{ categorium.nome }}</td>
+            </tr>
+            <tr>
+                <th>Slug</th>
+                <td>{{ categorium.slug }}</td>
+            </tr>
+            <tr>
+                <th>DataCadastro</th>
+                <td>{{ categorium.dataCadastro ? categorium.dataCadastro|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>DataAtualizacao</th>
+                <td>{{ categorium.dataAtualizacao ? categorium.dataAtualizacao|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('categoria_index') }}" class="btn btn-secondary btn-sm">Voltar</a>
+
+    <a href="{{ path('categoria_edit', {'id': categorium.id}) }}" class="btn btn-primary btn-sm">Editar</a>
+
+    <span class="float-right">{{ include('@Admin/categoria/_delete_form.html.twig') }}</span>
+{% endblock %}

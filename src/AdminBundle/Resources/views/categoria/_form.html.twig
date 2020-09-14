@@ -1,0 +1,5 @@
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn btn-primary btn-sm">{{ button_label|default('Save') }}</button>
+    <a href="{{ path('categoria_index') }}" class="btn btn-secondary btn-sm">Voltar</a>
+{{ form_end(form) }}

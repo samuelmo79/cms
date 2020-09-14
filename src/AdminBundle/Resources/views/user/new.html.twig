@@ -1,0 +1,11 @@
+{% extends '@Admin/baseAdmin.html.twig' %}
+
+{% block title %}Novo Usuário{% endblock %}
+
+{% block bodyAdmin %}
+    <h1>Novo Usuário</h1>
+
+    {{ include('@Admin/user/_form.html.twig') }}
+
+    <a href="{{ path('user_index') }}">back to list</a>
+{% endblock %}

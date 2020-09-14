@@ -1,0 +1,10 @@
+{% extends '@Admin/baseAdmin.html.twig' %}
+
+{% block title %}Edit Artigo{% endblock %}
+
+{% block bodyAdmin %}
+    <h1>Edit Artigo</h1>
+
+    {{ include('@Admin/artigo/_form.html.twig', {'button_label': 'Atualizar'}) }}
+
+{% endblock %}

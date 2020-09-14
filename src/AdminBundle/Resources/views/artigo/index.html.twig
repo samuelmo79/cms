@@ -1,0 +1,52 @@
+{% extends '@Admin/baseAdmin.html.twig' %}
+
+{% block title %}Artigo index{% endblock %}
+
+{% block bodyAdmin %}
+    <a href="{{ path('artigo_new') }}" class="btn btn-success btn-sm float-right">Novo Artigo</a>
+    <h2>Artigos</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Título</th>
+                <th>Status</th>
+                <th>Criado em</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for artigo in artigos %}
+            <tr>
+                <td>{{ artigo.id }}</td>
+                <td>{{ artigo.titulo }}</td>
+                <td>
+                    {% if artigo.status == 'P' %}
+                        <span class="badge badge-success">Publicado</span>
+                    {% elseif artigo.status == 'I' %}
+                        <span class="badge badge-secondary">Inativo</span>
+                    {% elseif artigo.status == 'E' %}
+                        <span class="badge badge-danger">Excluído</span>
+                    {% else %}
+                        <span class="badge badge-warning">Arquivado</span>
+                    {% endif %}
+                </td>
+                <td>{{ artigo.dataCadastro ? artigo.dataCadastro|date('d-m-Y H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('artigo_show', {'id': artigo.id}) }}" class="btn btn-primary btn-sm">Ver</a>
+                    <a href="{{ path('artigo_edit', {'id': artigo.id}) }}" class="btn btn-warning btn-sm">Editar</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">
+                    <div class="alert alert-primary" role="alert">
+                        Nenhum registro encontrado
+                    </div>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

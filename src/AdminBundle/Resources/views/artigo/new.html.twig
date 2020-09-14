@@ -1,0 +1,10 @@
+{% extends '@Admin/baseAdmin.html.twig' %}
+
+{% block title %}New Artigo{% endblock %}
+
+{% block bodyAdmin %}
+    <h2>Novo Artigo</h2>
+
+    {{ include('@Admin/artigo/_form.html.twig') }}
+    
+{% endblock %}

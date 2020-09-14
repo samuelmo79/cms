@@ -1,0 +1,30 @@
+{% extends '@Admin/baseAdmin.html.twig' %}
+
+{% block title %}Usuário{% endblock %}
+
+{% block bodyAdmin %}
+    <h1>Usuário</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ user.id }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ user.email }}</td>
+            </tr>
+            <tr>
+                <th>Roles</th>
+                <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('user_index') }}" class="btn btn-secondary btn-sm">Voltar</a>
+
+    <a href="{{ path('user_edit', {'id': user.id}) }}" class="btn btn-primary btn-sm">Editar</a>
+
+    <span class="float-right">{{ include('@Admin/user/_delete_form.html.twig') }}</span>
+{% endblock %}

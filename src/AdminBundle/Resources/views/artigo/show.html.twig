@@ -1,0 +1,64 @@
+{% extends '@Admin/baseAdmin.html.twig' %}
+
+{% block title %}Artigo{% endblock %}
+
+{% block bodyAdmin %}
+    <h1>Artigo</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ artigo.id }}</td>
+            </tr>
+            <tr>
+                <th>Titulo</th>
+                <td>{{ artigo.titulo }}</td>
+            </tr>
+            <tr>
+                <th>Slug</th>
+                <td>{{ artigo.slug }}</td>
+            </tr>
+            <tr>
+                <th>Conteudo</th>
+                <td>{{ artigo.conteudo }}</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>
+                    {% if artigo.status == 'P' %}
+                        <span class="badge badge-success">Publicado</span>
+                    {% elseif artigo.status == 'I' %}
+                        <span class="badge badge-secondary">Inativo</span>
+                    {% elseif artigo.status == 'E' %}
+                        <span class="badge badge-danger">Excluído</span>
+                    {% else %}
+                        <span class="badge badge-warning">Arquivado</span>
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <th>Acessos</th>
+                <td>{{ artigo.acessos }}</td>
+            </tr>
+            <tr>
+                <th>Imagem</th>
+                <td>{{ artigo.imagem }}</td>
+            </tr>
+            <tr>
+                <th>Criado em</th>
+                <td>{{ artigo.dataCadastro ? artigo.dataCadastro|date('d-m-Y H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Atualizado em</th>
+                <td>{{ artigo.dataAtualizacao ? artigo.dataAtualizacao|date('d-m-Y H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('artigo_index') }}" class="btn btn-secondary btn-sm">Voltar</a>
+
+    <a href="{{ path('artigo_edit', {'id': artigo.id}) }}" class="btn btn-primary btn-sm">Editar</a>
+
+    <span class="float-right">{{ include('@Admin/artigo/_delete_form.html.twig') }}</span>
+{% endblock %}

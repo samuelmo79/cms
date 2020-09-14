@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<div class="row">
+    <!-- Inicio coluna 1 -->
+    <div class="col-lg-8">
+        <div class="card bg-dark text-white mb-3">
+            <img src="{{ asset('imagens/artigos/blue.jpeg') }}" class="card-img" alt="..." width="50">
+            <div class="card-img-overlay">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+        </div>
+        {% for artigo in artigos %}
+            <div class="media">
+                <img src="{{ asset('imagens/artigos/' ~ artigo.imagem) }}" class="img-thumbnail mr-3" alt="..." width="80">
+                <div class="media-body">
+                    <span class="float-right">
+                        <span class="badge badge-secondary">{{ artigo.dataCadastro|ago }}</span>
+                    </span>
+                    <h5 class="mt-0">
+                        <a href="{{ path('ver_artigo', {'slug': artigo.slug}) }}">
+                            {{ artigo.titulo }}
+                        </a>
+                    </h5>
+                    {{ artigo.conteudo|slice(0,150) ~ '...' }}
+                </div>
+            </div>
+        {% else %}
+            <div class="alert alert-primary" role="alert">
+                Nenhum registro encontrado.
+            </div>
+        {% endfor %}
+    </div>
+    <!-- Fim coluna 1 -->
+    
+    <!-- Inicio coluna 2 -->
+    <div class="col-lg-4">
+        <div class="card">
+            <img src="{{ asset('imagens/artigos/no-image.png') }}" class="card-img-top" alt="..." width="60">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+    <!-- Fim coluna 2 -->
+</div>
+{% endblock %}

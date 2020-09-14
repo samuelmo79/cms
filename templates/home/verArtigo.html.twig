@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Artigo{% endblock %}
+
+{% block body %}
+    
+    <h2>{{ artigo.titulo }}</h2>
+    
+    <span class="text-muted small">
+        <strong><i class="fa fa-user"></i> </strong> {{ artigo.autor.dadosPessoais.nome }} {{ artigo.autor.dadosPessoais.sobrenome }}
+        <strong><i class="fa fa-calendar"></i> </strong> {{ artigo.dataCadastro|date("j\\,\\ F Y \\à\\s H:i") }}
+        <strong><i class="fa fa-eye"></i> </strong> {{ artigo.acessos }}
+        <strong><i class="fa fa-paste"></i> </strong> {{ artigo.categoria.nome }}
+    </span>
+    <hr>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="img-fluid mb-3">
+                {% if artigo.imagem is not null %}
+                    <img src="{{ asset(caminho_img_artigo ~ artigo.imagem) }}" class="img-thumbnail">
+                {% endif %}
+            </div>
+            <p align="justify">
+                {{ artigo.conteudo }}
+            </p>
+            <hr>
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                Comentários:
+                <div class="media">
+                    <img src="{{ asset('imagem/sem-imagem.jpg') }}" class="mr-3" alt="..." width="60">
+                    <div class="media-body">
+                        <h5 class="mt-0">Media heading</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+            {% else %}
+                Para comentar faça login. <a href="{{ path('app_login') }}">Login</a>
+            {% endif %}
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
