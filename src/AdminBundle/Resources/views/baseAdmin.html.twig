@@ -7,7 +7,9 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Dashboard - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('bootstrap/css/dashboard.css') }}">
+    <link rel="stylesheet" href="{{ asset('bootstrap/css/estilo.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/fontawesome/css/all.min.css') }}">
 </head>
 <body class="sb-nav-fixed">
@@ -29,7 +31,9 @@
             </div>
         </div>
     </form>
-    <a href="{{ path('home') }}" class="btn btn-light btn-sm">Ver site</a>
+    <a href="{{ path('home') }}" class="btn btn-light btn-sm">
+        <i class="fa fa-eye"></i> Ver site
+    </a>
     <!-- Navbar-->
     <ul class="navbar-nav ml-auto ml-md-0">
         <li class="nav-item dropdown">
@@ -40,12 +44,12 @@
                data-toggle="dropdown"
                aria-haspopup="true"
                aria-expanded="false">
-                <i class="fas fa-user-circle fa-fw"></i>Nome
+                <img src="{{ asset('imagens/users/male.png') }}" width="30" class="img">
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                Teste
+                <a class="dropdown-item" href="#">Usuários</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Sair</a>
+                <a class="dropdown-item" href="{{ path('app_logout') }}">Sair</a>
             </div>
         </li>
     </ul>

@@ -4,6 +4,8 @@
 namespace App\AdminBundle\Controller;
 
 
+use App\Entity\User;
+use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -16,8 +18,11 @@ class DashboardController extends AbstractController
      * @Route("/", name="index_dashboard")
      * @Template("@Admin/dashboard/index.html.twig")
      */
-    public function index()
+    public function index(EntityManagerInterface $entityManager)
     {
-        return [];
+        $contaUsuarios = $entityManager->getRepository(User::class)->contaUsuario();
+        return [
+            'contaUsuarios' => $contaUsuarios,
+        ];
     }
 }
