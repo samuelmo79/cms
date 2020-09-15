@@ -19,7 +19,11 @@ class ArtigoType extends AbstractType
         $builder
             ->add('titulo')
             ->add('conteudo', CKEditorType::class, [
-                'label' => 'Conteúdo'
+                'label' => 'Conteúdo',
+                'config' => [
+                    'toolbar' => 'ferramentas',
+                    'required' => true,
+                ]
             ])
             ->add('status', ChoiceType::class, [
                 'choices' => [
