@@ -37,6 +37,7 @@ class ArtigoType extends AbstractType
                 'class' => Categoria::class,
                 'choice_label' => 'nome'
             ])
+            ->add('destaque')
         ;
     }
 

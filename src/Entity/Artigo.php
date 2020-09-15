@@ -82,6 +82,11 @@ class Artigo
      */
     private $dataAtualizacao;
 
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $destaque;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -228,6 +233,18 @@ class Artigo
     public function setDataAtualizacao(?\DateTimeInterface $dataAtualizacao): self
     {
         $this->dataAtualizacao = $dataAtualizacao;
+
+        return $this;
+    }
+
+    public function getDestaque(): ?bool
+    {
+        return $this->destaque;
+    }
+
+    public function setDestaque(?bool $destaque): self
+    {
+        $this->destaque = $destaque;
 
         return $this;
     }
