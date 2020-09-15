@@ -258,8 +258,8 @@
     <!-- Inicio coluna 1 -->
     <div class="col-lg-8">
         {% for artigo in artigos %}
-            <div class="media">
-                <img src="{{ asset('imagens/artigos/' ~ artigo.imagem) }}" class="img-thumbnail mr-3" alt="..." width="80">
+            <div class="media mb-3">
+                <img src="{{ asset('imagens/artigos/' ~ artigo.imagem) }}" class="img-thumbnail mr-3" alt="..." width="120">
                 <div class="media-body">
                     <span class="float-right">
                         <span class="badge badge-secondary">{{ artigo.dataCadastro|ago }}</span>
@@ -269,9 +269,13 @@
                             {{ artigo.titulo }}
                         </a>
                     </h5>
-                    {{ artigo.conteudo|slice(0,150) ~ '...' }}
+                    {% autoescape %}
+                        {% set Artigo = artigo.conteudo|slice(0,150) ~ '...' %}
+                        {{ (false ? Artigo : Artigo)|raw }}
+                    {% endautoescape %}
                 </div>
             </div>
+            <hr>
         {% else %}
             <div class="alert alert-primary" role="alert">
                 Nenhum registro encontrado.

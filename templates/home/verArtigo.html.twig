@@ -21,7 +21,7 @@
                 {% endif %}
             </div>
             <p align="justify">
-                {{ artigo.conteudo }}
+                {{ artigo.conteudo|raw }}
             </p>
             <hr>
             {% if is_granted('IS_AUTHENTICATED_FULLY') %}

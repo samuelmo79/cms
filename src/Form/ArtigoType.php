@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Artigo;
 use App\Entity\Categoria;
+use FOS\CKEditorBundle\Form\Type\CKEditorType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
@@ -17,7 +18,9 @@ class ArtigoType extends AbstractType
     {
         $builder
             ->add('titulo')
-            ->add('conteudo')
+            ->add('conteudo', CKEditorType::class, [
+                'label' => 'Conteúdo'
+            ])
             ->add('status', ChoiceType::class, [
                 'choices' => [
                     'Publicado' => 'P',
