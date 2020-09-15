@@ -149,101 +149,107 @@
             <div class="col-12 col-md-6 pt-2 pl-md-1 mb-3 mb-lg-4">
                 <div class="row">
                     <!--news box-->
+                    {% for destaque in destaques %}
                     <div class="col-6 pb-1 pt-0 pr-1">
                         <div class="card border-0 rounded-0 text-white overflow zoom">
                             <div class="position-relative">
                                 <!--thumbnail img-->
                                 <div class="ratio_right-cover-2 image-wrapper">
-                                    <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
+                                    <a href="{{ path('ver_artigo', {'slug': destaque.slug}) }}">
                                         <img class="img-fluid"
-                                             src="https://bootstrap.news/source/img5.jpg"
-                                             alt="simple blog template bootstrap">
+                                             src="{{ asset('imagens/artigos/' ~ destaque.imagem) }}"
+                                             alt="Destaque">
                                     </a>
                                 </div>
                                 <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
                                     <!-- category -->
-                                    <a class="p-1 badge badge-primary rounded-0" href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">Lifestyle</a>
+                                    <a class="p-1 badge badge-primary rounded-0" href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
+                                        {{ destaque.categoria.nome }}
+                                    </a>
                                     
                                     <!--title-->
                                     <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
-                                        <h2 class="h5 text-white my-1">Should you see the Fantastic Beasts sequel?</h2>
+                                        <h2 class="h5 text-white my-1">
+                                            {{ destaque.titulo }}
+                                        </h2>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
                     
-                    <!--news box-->
-                    <div class="col-6 pb-1 pl-1 pt-0">
-                        <div class="card border-0 rounded-0 text-white overflow zoom">
-                            <div class="position-relative">
-                                <!--thumbnail img-->
-                                <div class="ratio_right-cover-2 image-wrapper">
-                                    <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
-                                        <img class="img-fluid"
-                                             src="https://bootstrap.news/source/img6.jpg"
-                                             alt="bootstrap templates for blog">
-                                    </a>
-                                </div>
-                                <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
-                                    <!-- category -->
-                                    <a class="p-1 badge badge-primary rounded-0" href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">Motocross</a>
-                                    <!--title-->
-                                    <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
-                                        <h2 class="h5 text-white my-1">Three myths about Florida elections recount</h2>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--news box-->
-                    <div class="col-6 pb-1 pr-1 pt-1">
-                        <div class="card border-0 rounded-0 text-white overflow zoom">
-                            <div class="position-relative">
-                                <!--thumbnail img-->
-                                <div class="ratio_right-cover-2 image-wrapper">
-                                    <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
-                                        <img class="img-fluid"
-                                             src="https://bootstrap.news/source/img7.jpg"
-                                             alt="bootstrap blog wordpress theme">
-                                    </a>
-                                </div>
-                                <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
-                                    <!-- category -->
-                                    <a class="p-1 badge badge-primary rounded-0" href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">Fitness</a>
-                                    <!--title-->
-                                    <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
-                                        <h2 class="h5 text-white my-1">Finding Empowerment in Two Wheels and a Helmet</h2>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--news box-->
-                    <div class="col-6 pb-1 pl-1 pt-1">
-                        <div class="card border-0 rounded-0 text-white overflow zoom">
-                            <div class="position-relative">
-                                <!--thumbnail img-->
-                                <div class="ratio_right-cover-2 image-wrapper">
-                                    <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
-                                        <img class="img-fluid"
-                                             src="https://bootstrap.news/source/img8.jpg"
-                                             alt="blog website templates bootstrap">
-                                    </a>
-                                </div>
-                                <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
-                                    <!-- category -->
-                                    <a class="p-1 badge badge-primary rounded-0" href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">Adventure</a>
-                                    <!--title-->
-                                    <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
-                                        <h2 class="h5 text-white my-1">Ditch receipts and four other tips to be a shopper</h2>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+{#                    <!--news box-->#}
+{#                    <div class="col-6 pb-1 pl-1 pt-0">#}
+{#                        <div class="card border-0 rounded-0 text-white overflow zoom">#}
+{#                            <div class="position-relative">#}
+{#                                <!--thumbnail img-->#}
+{#                                <div class="ratio_right-cover-2 image-wrapper">#}
+{#                                    <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">#}
+{#                                        <img class="img-fluid"#}
+{#                                             src="https://bootstrap.news/source/img6.jpg"#}
+{#                                             alt="bootstrap templates for blog">#}
+{#                                    </a>#}
+{#                                </div>#}
+{#                                <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">#}
+{#                                    <!-- category -->#}
+{#                                    <a class="p-1 badge badge-primary rounded-0" href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">Motocross</a>#}
+{#                                    <!--title-->#}
+{#                                    <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">#}
+{#                                        <h2 class="h5 text-white my-1">Three myths about Florida elections recount</h2>#}
+{#                                    </a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    #}
+{#                    <!--news box-->#}
+{#                    <div class="col-6 pb-1 pr-1 pt-1">#}
+{#                        <div class="card border-0 rounded-0 text-white overflow zoom">#}
+{#                            <div class="position-relative">#}
+{#                                <!--thumbnail img-->#}
+{#                                <div class="ratio_right-cover-2 image-wrapper">#}
+{#                                    <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">#}
+{#                                        <img class="img-fluid"#}
+{#                                             src="https://bootstrap.news/source/img7.jpg"#}
+{#                                             alt="bootstrap blog wordpress theme">#}
+{#                                    </a>#}
+{#                                </div>#}
+{#                                <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">#}
+{#                                    <!-- category -->#}
+{#                                    <a class="p-1 badge badge-primary rounded-0" href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">Fitness</a>#}
+{#                                    <!--title-->#}
+{#                                    <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">#}
+{#                                        <h2 class="h5 text-white my-1">Finding Empowerment in Two Wheels and a Helmet</h2>#}
+{#                                    </a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    #}
+{#                    <!--news box-->#}
+{#                    <div class="col-6 pb-1 pl-1 pt-1">#}
+{#                        <div class="card border-0 rounded-0 text-white overflow zoom">#}
+{#                            <div class="position-relative">#}
+{#                                <!--thumbnail img-->#}
+{#                                <div class="ratio_right-cover-2 image-wrapper">#}
+{#                                    <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">#}
+{#                                        <img class="img-fluid"#}
+{#                                             src="https://bootstrap.news/source/img8.jpg"#}
+{#                                             alt="blog website templates bootstrap">#}
+{#                                    </a>#}
+{#                                </div>#}
+{#                                <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">#}
+{#                                    <!-- category -->#}
+{#                                    <a class="p-1 badge badge-primary rounded-0" href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">Adventure</a>#}
+{#                                    <!--title-->#}
+{#                                    <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">#}
+{#                                        <h2 class="h5 text-white my-1">Ditch receipts and four other tips to be a shopper</h2>#}
+{#                                    </a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
                     <!--end news box-->
                 </div>
             </div>

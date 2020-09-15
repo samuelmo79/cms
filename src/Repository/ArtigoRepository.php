@@ -19,6 +19,16 @@ class ArtigoRepository extends ServiceEntityRepository
         parent::__construct($registry, Artigo::class);
     }
 
+    public function destaques()
+    {
+        return $this->createQueryBuilder('d')
+            ->where('d.destaque = :destaque')
+            ->setParameter('destaque', true)
+            ->getQuery()
+            ->getResult()
+        ;
+    }
+
     // /**
     //  * @return Artigo[] Returns an array of Artigo objects
     //  */
