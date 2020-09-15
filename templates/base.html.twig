@@ -74,7 +74,7 @@
                                     {% if is_granted('ROLE_ADMIN') %}
                                         <a href="{{ path('index_dashboard') }}" class="dropdown-item">Painel Admin</a>
                                     {% endif %}
-                                    <a href="#" class="dropdown-item">Perfil</a>
+                                    <a href="{{ path('perfil') }}" class="dropdown-item">Perfil</a>
                                     <div class="dropdown-divider"></div>
                                     <a href="{{ path('app_logout') }}" class="dropdown-item">Sair</a>
                                 </div>
