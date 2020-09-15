@@ -62,6 +62,10 @@ class HomeController extends AbstractController
      */
     public function verArtigo(Artigo $artigo)
     {
+        $contaAcesso = $this->em->getRepository(Artigo::class)->find($artigo);
+        $contaAcesso->setAcessos($contaAcesso->getAcessos() + 1);
+        $this->em->flush();
+
         return $this->render('home/verArtigo.html.twig', [
             'artigo' => $artigo,
         ]);
