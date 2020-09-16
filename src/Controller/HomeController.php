@@ -28,9 +28,14 @@ class HomeController extends AbstractController
 
         $destaques = $this->em->getRepository(Artigo::class)->destaques();
 
+        $maisPopulares = $this->em->getRepository(Artigo::class)->findBy(array(), array(
+            'acessos' => 'DESC'
+        ));
+
         return $this->render('home/index.html.twig', [
             'artigos' => $artigos,
-            'destaques' => $destaques
+            'destaques' => $destaques,
+            'maisPopulares' => $maisPopulares,
         ]);
     }
 
