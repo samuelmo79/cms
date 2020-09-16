@@ -1,59 +1,61 @@
 {{ form_start(form) }}
 <div class="row justify-content-center">
-    <div class="card">
-        <article class="card-body">
-            <h4 class="card-title mb-4 mt-1">Registro</h4>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col">
-                        {{ form_label(form.dadosPessoais.nome) }}
-                        {{ form_widget(form.dadosPessoais.nome) }}
-                        </div>
-                        <div class="col">
-                            {{ form_label(form.dadosPessoais.sobrenome) }}
-                            {{ form_widget(form.dadosPessoais.sobrenome) }}
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    {{ form_label(form.email) }}
-                    {{ form_widget(form.email) }}
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col">
-                            {{ form_label(form.dadosPessoais.sexo) }}
-                            {{ form_widget(form.dadosPessoais.sexo) }}
-                        </div>
-                        <div class="col">
-                            {{ form_label(form.dadosPessoais.dataNascimento) }}
-                            {{ form_widget(form.dadosPessoais.dataNascimento) }}
+    <div class="col-11 col-lg-8">
+        <div class="card">
+            <article class="card-body">
+                <h4 class="card-title mb-4 mt-1">Registro</h4>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                            {{ form_label(form.dadosPessoais.nome) }}
+                            {{ form_widget(form.dadosPessoais.nome) }}
+                            </div>
+                            <div class="col">
+                                {{ form_label(form.dadosPessoais.sobrenome) }}
+                                {{ form_widget(form.dadosPessoais.sobrenome) }}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    {{ form_label(form.dadosPessoais.cidade) }}
-                    {{ form_widget(form.dadosPessoais.cidade) }}
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col">
-                            {{ form_label(form.senhaPura.first) }}
-                            {{ form_widget(form.senhaPura.first) }}
-                        </div>
-                        <div class="col">
-                            {{ form_label(form.senhaPura.second) }}
-                            {{ form_widget(form.senhaPura.second) }}
+                    <div class="form-group">
+                        {{ form_label(form.email) }}
+                        {{ form_widget(form.email) }}
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                {{ form_label(form.dadosPessoais.sexo) }}
+                                {{ form_widget(form.dadosPessoais.sexo) }}
+                            </div>
+                            <div class="col">
+                                {{ form_label(form.dadosPessoais.dataNascimento) }}
+                                {{ form_widget(form.dadosPessoais.dataNascimento) }}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
-                </div>
-                <div class="form-group">
-                    <a href="{{ path('app_login') }}" class="btn-block btn btn-outline-primary">Já tenho cadastro</a>
-                </div>
-        </article>
+                    <div class="form-group">
+                        {{ form_label(form.dadosPessoais.cidade) }}
+                        {{ form_widget(form.dadosPessoais.cidade) }}
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                {{ form_label(form.senhaPura.first) }}
+                                {{ form_widget(form.senhaPura.first) }}
+                            </div>
+                            <div class="col">
+                                {{ form_label(form.senhaPura.second) }}
+                                {{ form_widget(form.senhaPura.second) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+                    </div>
+                    <div class="form-group">
+                        <a href="{{ path('app_login') }}" class="btn-block btn btn-outline-primary">Já tenho cadastro</a>
+                    </div>
+            </article>
+        </div>
     </div>
 </div>
 {{ form_end(form) }}
