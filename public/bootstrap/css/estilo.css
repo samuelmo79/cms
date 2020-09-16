@@ -26,6 +26,114 @@ h1, h2, h3, h4 {
 # FIM Geral
 --------------------------------------------------------------*/
 
+/*------------------------------------
+	Color
+------------------------------------*/
+a {
+    color: #6c63ff;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #1b1b1b;
+}
+
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a, .h1 > a, .h2 > a, .h3 > a, .h4 > a, .h5 > a, .h6 > a {
+    color: #1b1b1b;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 > .btn a, h2 > .btn a, h3 > .btn a, h4 > .btn a, h5 > .btn a, h6 > .btn a, .h1 > .btn a, .h2 > .btn a, .h3 > .btn a, .h4 > .btn a, .h5 > .btn a, .h6 > .btn a {
+    color: #fff;
+}
+
+h1 > .btn a:hover, h2 > .btn a:hover, h3 > .btn a:hover, h4 > .btn a:hover, h5 > .btn a:hover, h6 > .btn a:hover, .h1 > .btn a:hover, .h2 > .btn a:hover, .h3 > .btn a:hover, .h4 > .btn a:hover, .h5 > .btn a:hover, .h6 > .btn a:hover {
+    color: #fff;
+}
+
+p {
+    color: #666666;
+}
+
+/*------------------------------------
+  Extra color
+------------------------------------*/
+.bg-blue {
+    background-color: #4285f4 !important;
+}
+
+.text-blue {
+    color: #4285f4 !important;
+}
+
+.border-blue {
+    border-color: #4285f4 !important;
+}
+
+.bg-purple {
+    background-color: #7952B3 !important;
+}
+
+.text-purple {
+    color: #7952B3 !important;
+}
+
+.border-purple {
+    border-color: #7952B3 !important;
+}
+
+.bg-pink {
+    background-color: #d6456a !important;
+}
+
+.text-pink {
+    color: #d6456a !important;
+}
+
+.border-pink {
+    border-color: #d6456a !important;
+}
+
+.bg-yellow {
+    background-color: #ffc107 !important;
+}
+
+.text-yellow {
+    color: #ffc107 !important;
+}
+
+.border-yellow {
+    border-color: #ffc107 !important;
+}
+
+.bg-black {
+    background-color: #000 !important;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border-color: #000 !important;
+}
+
+.bg-themes {
+    background: #fff !important;
+}
+
+.bg-light-dark, .bg-light-black {
+    background: #f6f6f6 !important;
+}
+
+.black a {
+    color: #000;
+}
+
+.white a {
+    color: #fff;
+}
+
+
 /*--------------------------------------------------------------
 # INÍCIO Magazine News Bootstrap
 --------------------------------------------------------------*/
@@ -34,7 +142,7 @@ h1, h2, h3, h4 {
 }
 .bg-shadow {
     background: rgba(76, 76, 76, 0);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(179, 171, 171, 0)), color-stop(49%, rgba(48, 48, 48, 0.37)), color-stop(100%, rgba(19, 19, 19, 0.8)));
+    background: -webkit-gradient(left-top, left-bottom, color-stop(0%, rgba(179, 171, 171, 0)), color-stop(49%, rgba(48, 48, 48, 0.37)), color-stop(100%, rgba(19, 19, 19, 0.8)));
     background: linear-gradient(to bottom, rgba(179, 171, 171, 0) 0%, rgba(48, 48, 48, 0.71) 49%, rgba(19, 19, 19, 0.8) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
 }
@@ -211,9 +319,138 @@ a.about-item-edit {
 .text-brown {
     color: #8B4513;
 }
-/*--------------------------------------------------------------
-# FIM Cards
---------------------------------------------------------------*/
+
+/*------------------------------------
+  Space Percent
+------------------------------------*/
+/*top*/
+.top-1 {
+    top: 10%;
+}
+
+.top-2 {
+    top: 20%;
+}
+
+.top-3 {
+    top: 30%;
+}
+
+.top-4 {
+    top: 40%;
+}
+
+.top-5 {
+    top: 50%;
+}
+
+/*bottom*/
+.bottom-1 {
+    bottom: 10%;
+}
+
+.bottom-2 {
+    bottom: 20%;
+}
+
+.bottom-3 {
+    bottom: 30%;
+}
+
+.bottom-4 {
+    bottom: 40%;
+}
+
+.bottom-5 {
+    bottom: 50%;
+}
+
+/*right*/
+.right-1 {
+    right: 10%;
+}
+
+.right-2 {
+    right: 20%;
+}
+
+.right-3 {
+    right: 30%;
+}
+
+.right-4 {
+    right: 40%;
+}
+
+.right-5 {
+    right: 50%;
+}
+
+/*left*/
+.left-1 {
+    left: 10%;
+}
+
+.left-2 {
+    left: 20%;
+}
+
+.left-3 {
+    left: 30%;
+}
+
+.left-4 {
+    left: 40%;
+}
+
+.left-5 {
+    left: 50%;
+}
+
+.h-0 {
+    height: 0;
+}
+
+.gap-0, .gap-05, .gap-075, .gap-1, .gap-15, .gap-2, .gap-25, .gap-3, .gap-4 {
+    width: 100%;
+    clear: both;
+}
+
+.gap-0 {
+    height: .1px;
+}
+
+.gap-05 {
+    height: 0.5rem;
+}
+
+.gap-075 {
+    height: 0.75rem;
+}
+
+.gap-1 {
+    height: 1rem;
+}
+
+.gap-15 {
+    height: 1.5rem;
+}
+
+.gap-2 {
+    height: 2rem;
+}
+
+.gap-25 {
+    height: 2.5rem;
+}
+
+.gap-3 {
+    height: 3rem;
+}
+
+.gap-4 {
+    height: 4rem;
+}
 
 /*--------------------------------------------------------------
 # INÍCIO Footer
@@ -368,56 +605,7 @@ a.about-item-edit {
     top: -3px;
     border-radius:3px;
 }
-.section-01 {
-    float: left;
-    width: 100%;
-    border-top: 1px solid #d5d5d5;
-    border-bottom: 1px solid #d5d5d5;
-}
-.section-01 .heading-large {
-    border-bottom: 2px solid #222;
-    color: #222;
-    float: left;
-    width: 100%;
-    padding:0 0 6px;
-    margin:0 0 18px;
-    text-align: left;
-}
-.section-01 .heading-large::before, .section-01 .heading-large::after {
-    background: transparent;
-}
-.section-01 .heading-small {
-    border-bottom: 2px solid #222;
-    color: #222;
-    float: left;
-    margin: 7px 0 0;
-    width: 100%;
-    padding-bottom: 10px;
-    font-size: 18px;
-}
-.section-01 .title-small {
-    margin-bottom: 5px;
-    font-size:17px;
-}
-.section-01 .news-block {
-    border-bottom: 1px dashed #000;
-    padding-bottom: 30px;
-    border: none;
-}
-.section-01 aside > .news-block {
-    border-bottom: 1px dashed #000;
-    padding-bottom: 19px;
-}
-.section-01 aside > .news-block:last-child {
-    border-bottom: none;
-    margin-bottom: 20px;
-}
-.section-01 .card {
-    border: none;
-}
-.section-01 .card-block {
-    padding: 10px 0;
-}
+
 #m-menu {
     left: -10pc;
     min-width: 37rem;
@@ -444,3 +632,1048 @@ a.about-item-edit {
 # FIM Menu
 --------------------------------------------------------------*/
 
+/*------------------------------------
+  News Block
+------------------------------------*/
+.block-area, .widget {
+    position: relative;
+    clear: both;
+    margin-bottom: 1.5rem;
+}
+
+.block-area .btn, .widget .btn {
+    margin-bottom: 0.5rem;
+}
+
+.sticky {
+    margin-bottom: 1.5rem;
+}
+
+.first-pt-0 article:first-child {
+    padding-top: 0 !important;
+}
+
+.block-primary a {
+    color: #6c63ff;
+}
+
+.block-primary a:hover {
+    color: #6c63ff !important;
+}
+
+.block-primary a.badge {
+    color: #fff !important;
+    background-color: #6c63ff;
+}
+
+.block-primary a.btn:hover {
+    color: #fff !important;
+}
+
+.block-primary h1 > a, .block-primary h2 > a, .block-primary h3 > a, .block-primary h4 > a, .block-primary h5 > a, .block-primary h6 > a, .block-primary .h1 > a, .block-primary .h2 > a, .block-primary .h3 > a, .block-primary .h4 > a, .block-primary .h5 > a, .block-primary .h6 > a {
+    color: #1b1b1b;
+}
+
+.block-primary h1 > a:hover, .block-primary h2 > a:hover, .block-primary h3 > a:hover, .block-primary h4 > a:hover, .block-primary h5 > a:hover, .block-primary h6 > a:hover, .block-primary .h1 > a:hover, .block-primary .h2 > a:hover, .block-primary .h3 > a:hover, .block-primary .h4 > a:hover, .block-primary .h5 > a:hover, .block-primary .h6 > a:hover {
+    color: #6c63ff !important;
+}
+
+.block-primary .hover-a:hover h1 > a, .block-primary .hover-a:hover h2 > a, .block-primary .hover-a:hover h3 > a, .block-primary .hover-a:hover h4 > a, .block-primary .hover-a:hover h5 > a, .block-primary .hover-a:hover h6 > a, .block-primary .hover-a:hover .h1 > a, .block-primary .hover-a:hover .h2 > a, .block-primary .hover-a:hover .h3 > a, .block-primary .hover-a:hover .h4 > a, .block-primary .hover-a:hover .h5 > a, .block-primary .hover-a:hover .h6 > a {
+    color: #6c63ff !important;
+}
+
+.block-primary .hover-a:hover h1 > a.text-white, .block-primary .hover-a:hover h2 > a.text-white, .block-primary .hover-a:hover h3 > a.text-white, .block-primary .hover-a:hover h4 > a.text-white, .block-primary .hover-a:hover h5 > a.text-white, .block-primary .hover-a:hover h6 > a.text-white, .block-primary .hover-a:hover .h1 > a.text-white, .block-primary .hover-a:hover .h2 > a.text-white, .block-primary .hover-a:hover .h3 > a.text-white, .block-primary .hover-a:hover .h4 > a.text-white, .block-primary .hover-a:hover .h5 > a.text-white, .block-primary .hover-a:hover .h6 > a.text-white {
+    color: #fff !important;
+}
+
+.block-primary .sub-card ul li a {
+    color: #1b1b1b !important;
+}
+
+.block-primary .sub-card ul li a:hover {
+    color: #6c63ff !important;
+}
+
+.block-secondary a {
+    color: #000;
+}
+
+.block-secondary a:hover {
+    color: #000 !important;
+}
+
+.block-secondary a.badge {
+    color: #fff !important;
+    background-color: #000;
+}
+
+.block-secondary a.btn:hover {
+    color: #fff !important;
+}
+
+.block-secondary h1 > a, .block-secondary h2 > a, .block-secondary h3 > a, .block-secondary h4 > a, .block-secondary h5 > a, .block-secondary h6 > a, .block-secondary .h1 > a, .block-secondary .h2 > a, .block-secondary .h3 > a, .block-secondary .h4 > a, .block-secondary .h5 > a, .block-secondary .h6 > a {
+    color: #1b1b1b;
+}
+
+.block-secondary h1 > a:hover, .block-secondary h2 > a:hover, .block-secondary h3 > a:hover, .block-secondary h4 > a:hover, .block-secondary h5 > a:hover, .block-secondary h6 > a:hover, .block-secondary .h1 > a:hover, .block-secondary .h2 > a:hover, .block-secondary .h3 > a:hover, .block-secondary .h4 > a:hover, .block-secondary .h5 > a:hover, .block-secondary .h6 > a:hover {
+    color: #000 !important;
+}
+
+.block-secondary .hover-a:hover h1 > a, .block-secondary .hover-a:hover h2 > a, .block-secondary .hover-a:hover h3 > a, .block-secondary .hover-a:hover h4 > a, .block-secondary .hover-a:hover h5 > a, .block-secondary .hover-a:hover h6 > a, .block-secondary .hover-a:hover .h1 > a, .block-secondary .hover-a:hover .h2 > a, .block-secondary .hover-a:hover .h3 > a, .block-secondary .hover-a:hover .h4 > a, .block-secondary .hover-a:hover .h5 > a, .block-secondary .hover-a:hover .h6 > a {
+    color: #000 !important;
+}
+
+.block-secondary .hover-a:hover h1 > a.text-white, .block-secondary .hover-a:hover h2 > a.text-white, .block-secondary .hover-a:hover h3 > a.text-white, .block-secondary .hover-a:hover h4 > a.text-white, .block-secondary .hover-a:hover h5 > a.text-white, .block-secondary .hover-a:hover h6 > a.text-white, .block-secondary .hover-a:hover .h1 > a.text-white, .block-secondary .hover-a:hover .h2 > a.text-white, .block-secondary .hover-a:hover .h3 > a.text-white, .block-secondary .hover-a:hover .h4 > a.text-white, .block-secondary .hover-a:hover .h5 > a.text-white, .block-secondary .hover-a:hover .h6 > a.text-white {
+    color: #fff !important;
+}
+
+.block-secondary .sub-card ul li a {
+    color: #1b1b1b !important;
+}
+
+.block-secondary .sub-card ul li a:hover {
+    color: #000 !important;
+}
+
+.block-success a {
+    color: #00b191;
+}
+
+.block-success a:hover {
+    color: #00b191 !important;
+}
+
+.block-success a.badge {
+    color: #fff !important;
+    background-color: #00b191;
+}
+
+.block-success a.btn:hover {
+    color: #fff !important;
+}
+
+.block-success h1 > a, .block-success h2 > a, .block-success h3 > a, .block-success h4 > a, .block-success h5 > a, .block-success h6 > a, .block-success .h1 > a, .block-success .h2 > a, .block-success .h3 > a, .block-success .h4 > a, .block-success .h5 > a, .block-success .h6 > a {
+    color: #1b1b1b;
+}
+
+.block-success h1 > a:hover, .block-success h2 > a:hover, .block-success h3 > a:hover, .block-success h4 > a:hover, .block-success h5 > a:hover, .block-success h6 > a:hover, .block-success .h1 > a:hover, .block-success .h2 > a:hover, .block-success .h3 > a:hover, .block-success .h4 > a:hover, .block-success .h5 > a:hover, .block-success .h6 > a:hover {
+    color: #00b191 !important;
+}
+
+.block-success .hover-a:hover h1 > a, .block-success .hover-a:hover h2 > a, .block-success .hover-a:hover h3 > a, .block-success .hover-a:hover h4 > a, .block-success .hover-a:hover h5 > a, .block-success .hover-a:hover h6 > a, .block-success .hover-a:hover .h1 > a, .block-success .hover-a:hover .h2 > a, .block-success .hover-a:hover .h3 > a, .block-success .hover-a:hover .h4 > a, .block-success .hover-a:hover .h5 > a, .block-success .hover-a:hover .h6 > a {
+    color: #00b191 !important;
+}
+
+.block-success .hover-a:hover h1 > a.text-white, .block-success .hover-a:hover h2 > a.text-white, .block-success .hover-a:hover h3 > a.text-white, .block-success .hover-a:hover h4 > a.text-white, .block-success .hover-a:hover h5 > a.text-white, .block-success .hover-a:hover h6 > a.text-white, .block-success .hover-a:hover .h1 > a.text-white, .block-success .hover-a:hover .h2 > a.text-white, .block-success .hover-a:hover .h3 > a.text-white, .block-success .hover-a:hover .h4 > a.text-white, .block-success .hover-a:hover .h5 > a.text-white, .block-success .hover-a:hover .h6 > a.text-white {
+    color: #fff !important;
+}
+
+.block-success .sub-card ul li a {
+    color: #1b1b1b !important;
+}
+
+.block-success .sub-card ul li a:hover {
+    color: #00b191 !important;
+}
+
+.block-info a {
+    color: #17a2b8;
+}
+
+.block-info a:hover {
+    color: #17a2b8 !important;
+}
+
+.block-info a.badge {
+    color: #fff !important;
+    background-color: #17a2b8;
+}
+
+.block-info a.btn:hover {
+    color: #fff !important;
+}
+
+.block-info h1 > a, .block-info h2 > a, .block-info h3 > a, .block-info h4 > a, .block-info h5 > a, .block-info h6 > a, .block-info .h1 > a, .block-info .h2 > a, .block-info .h3 > a, .block-info .h4 > a, .block-info .h5 > a, .block-info .h6 > a {
+    color: #1b1b1b;
+}
+
+.block-info h1 > a:hover, .block-info h2 > a:hover, .block-info h3 > a:hover, .block-info h4 > a:hover, .block-info h5 > a:hover, .block-info h6 > a:hover, .block-info .h1 > a:hover, .block-info .h2 > a:hover, .block-info .h3 > a:hover, .block-info .h4 > a:hover, .block-info .h5 > a:hover, .block-info .h6 > a:hover {
+    color: #17a2b8 !important;
+}
+
+.block-info .hover-a:hover h1 > a, .block-info .hover-a:hover h2 > a, .block-info .hover-a:hover h3 > a, .block-info .hover-a:hover h4 > a, .block-info .hover-a:hover h5 > a, .block-info .hover-a:hover h6 > a, .block-info .hover-a:hover .h1 > a, .block-info .hover-a:hover .h2 > a, .block-info .hover-a:hover .h3 > a, .block-info .hover-a:hover .h4 > a, .block-info .hover-a:hover .h5 > a, .block-info .hover-a:hover .h6 > a {
+    color: #17a2b8 !important;
+}
+
+.block-info .hover-a:hover h1 > a.text-white, .block-info .hover-a:hover h2 > a.text-white, .block-info .hover-a:hover h3 > a.text-white, .block-info .hover-a:hover h4 > a.text-white, .block-info .hover-a:hover h5 > a.text-white, .block-info .hover-a:hover h6 > a.text-white, .block-info .hover-a:hover .h1 > a.text-white, .block-info .hover-a:hover .h2 > a.text-white, .block-info .hover-a:hover .h3 > a.text-white, .block-info .hover-a:hover .h4 > a.text-white, .block-info .hover-a:hover .h5 > a.text-white, .block-info .hover-a:hover .h6 > a.text-white {
+    color: #fff !important;
+}
+
+.block-info .sub-card ul li a {
+    color: #1b1b1b !important;
+}
+
+.block-info .sub-card ul li a:hover {
+    color: #17a2b8 !important;
+}
+
+.block-warning a {
+    color: #ffc107;
+}
+
+.block-warning a:hover {
+    color: #ffc107 !important;
+}
+
+.block-warning a.badge {
+    color: #fff !important;
+    background-color: #ffc107;
+}
+
+.block-warning a.btn:hover {
+    color: #fff !important;
+}
+
+.block-warning h1 > a, .block-warning h2 > a, .block-warning h3 > a, .block-warning h4 > a, .block-warning h5 > a, .block-warning h6 > a, .block-warning .h1 > a, .block-warning .h2 > a, .block-warning .h3 > a, .block-warning .h4 > a, .block-warning .h5 > a, .block-warning .h6 > a {
+    color: #1b1b1b;
+}
+
+.block-warning h1 > a:hover, .block-warning h2 > a:hover, .block-warning h3 > a:hover, .block-warning h4 > a:hover, .block-warning h5 > a:hover, .block-warning h6 > a:hover, .block-warning .h1 > a:hover, .block-warning .h2 > a:hover, .block-warning .h3 > a:hover, .block-warning .h4 > a:hover, .block-warning .h5 > a:hover, .block-warning .h6 > a:hover {
+    color: #ffc107 !important;
+}
+
+.block-warning .hover-a:hover h1 > a, .block-warning .hover-a:hover h2 > a, .block-warning .hover-a:hover h3 > a, .block-warning .hover-a:hover h4 > a, .block-warning .hover-a:hover h5 > a, .block-warning .hover-a:hover h6 > a, .block-warning .hover-a:hover .h1 > a, .block-warning .hover-a:hover .h2 > a, .block-warning .hover-a:hover .h3 > a, .block-warning .hover-a:hover .h4 > a, .block-warning .hover-a:hover .h5 > a, .block-warning .hover-a:hover .h6 > a {
+    color: #ffc107 !important;
+}
+
+.block-warning .hover-a:hover h1 > a.text-white, .block-warning .hover-a:hover h2 > a.text-white, .block-warning .hover-a:hover h3 > a.text-white, .block-warning .hover-a:hover h4 > a.text-white, .block-warning .hover-a:hover h5 > a.text-white, .block-warning .hover-a:hover h6 > a.text-white, .block-warning .hover-a:hover .h1 > a.text-white, .block-warning .hover-a:hover .h2 > a.text-white, .block-warning .hover-a:hover .h3 > a.text-white, .block-warning .hover-a:hover .h4 > a.text-white, .block-warning .hover-a:hover .h5 > a.text-white, .block-warning .hover-a:hover .h6 > a.text-white {
+    color: #fff !important;
+}
+
+.block-warning .sub-card ul li a {
+    color: #1b1b1b !important;
+}
+
+.block-warning .sub-card ul li a:hover {
+    color: #ffc107 !important;
+}
+
+.block-danger a {
+    color: #d72924;
+}
+
+.block-danger a:hover {
+    color: #d72924 !important;
+}
+
+.block-danger a.badge {
+    color: #fff !important;
+    background-color: #d72924;
+}
+
+.block-danger a.btn:hover {
+    color: #fff !important;
+}
+
+.block-danger h1 > a, .block-danger h2 > a, .block-danger h3 > a, .block-danger h4 > a, .block-danger h5 > a, .block-danger h6 > a, .block-danger .h1 > a, .block-danger .h2 > a, .block-danger .h3 > a, .block-danger .h4 > a, .block-danger .h5 > a, .block-danger .h6 > a {
+    color: #1b1b1b;
+}
+
+.block-danger h1 > a:hover, .block-danger h2 > a:hover, .block-danger h3 > a:hover, .block-danger h4 > a:hover, .block-danger h5 > a:hover, .block-danger h6 > a:hover, .block-danger .h1 > a:hover, .block-danger .h2 > a:hover, .block-danger .h3 > a:hover, .block-danger .h4 > a:hover, .block-danger .h5 > a:hover, .block-danger .h6 > a:hover {
+    color: #d72924 !important;
+}
+
+.block-danger .hover-a:hover h1 > a, .block-danger .hover-a:hover h2 > a, .block-danger .hover-a:hover h3 > a, .block-danger .hover-a:hover h4 > a, .block-danger .hover-a:hover h5 > a, .block-danger .hover-a:hover h6 > a, .block-danger .hover-a:hover .h1 > a, .block-danger .hover-a:hover .h2 > a, .block-danger .hover-a:hover .h3 > a, .block-danger .hover-a:hover .h4 > a, .block-danger .hover-a:hover .h5 > a, .block-danger .hover-a:hover .h6 > a {
+    color: #d72924 !important;
+}
+
+.block-danger .hover-a:hover h1 > a.text-white, .block-danger .hover-a:hover h2 > a.text-white, .block-danger .hover-a:hover h3 > a.text-white, .block-danger .hover-a:hover h4 > a.text-white, .block-danger .hover-a:hover h5 > a.text-white, .block-danger .hover-a:hover h6 > a.text-white, .block-danger .hover-a:hover .h1 > a.text-white, .block-danger .hover-a:hover .h2 > a.text-white, .block-danger .hover-a:hover .h3 > a.text-white, .block-danger .hover-a:hover .h4 > a.text-white, .block-danger .hover-a:hover .h5 > a.text-white, .block-danger .hover-a:hover .h6 > a.text-white {
+    color: #fff !important;
+}
+
+.block-danger .sub-card ul li a {
+    color: #1b1b1b !important;
+}
+
+.block-danger .sub-card ul li a:hover {
+    color: #d72924 !important;
+}
+
+.block-light a {
+    color: #f6f6f6;
+}
+
+.block-light a:hover {
+    color: #f6f6f6 !important;
+}
+
+.block-light a.badge {
+    color: #fff !important;
+    background-color: #f6f6f6;
+}
+
+.block-light a.btn:hover {
+    color: #fff !important;
+}
+
+.block-light h1 > a, .block-light h2 > a, .block-light h3 > a, .block-light h4 > a, .block-light h5 > a, .block-light h6 > a, .block-light .h1 > a, .block-light .h2 > a, .block-light .h3 > a, .block-light .h4 > a, .block-light .h5 > a, .block-light .h6 > a {
+    color: #1b1b1b;
+}
+
+.block-light h1 > a:hover, .block-light h2 > a:hover, .block-light h3 > a:hover, .block-light h4 > a:hover, .block-light h5 > a:hover, .block-light h6 > a:hover, .block-light .h1 > a:hover, .block-light .h2 > a:hover, .block-light .h3 > a:hover, .block-light .h4 > a:hover, .block-light .h5 > a:hover, .block-light .h6 > a:hover {
+    color: #f6f6f6 !important;
+}
+
+.block-light .hover-a:hover h1 > a, .block-light .hover-a:hover h2 > a, .block-light .hover-a:hover h3 > a, .block-light .hover-a:hover h4 > a, .block-light .hover-a:hover h5 > a, .block-light .hover-a:hover h6 > a, .block-light .hover-a:hover .h1 > a, .block-light .hover-a:hover .h2 > a, .block-light .hover-a:hover .h3 > a, .block-light .hover-a:hover .h4 > a, .block-light .hover-a:hover .h5 > a, .block-light .hover-a:hover .h6 > a {
+    color: #f6f6f6 !important;
+}
+
+.block-light .hover-a:hover h1 > a.text-white, .block-light .hover-a:hover h2 > a.text-white, .block-light .hover-a:hover h3 > a.text-white, .block-light .hover-a:hover h4 > a.text-white, .block-light .hover-a:hover h5 > a.text-white, .block-light .hover-a:hover h6 > a.text-white, .block-light .hover-a:hover .h1 > a.text-white, .block-light .hover-a:hover .h2 > a.text-white, .block-light .hover-a:hover .h3 > a.text-white, .block-light .hover-a:hover .h4 > a.text-white, .block-light .hover-a:hover .h5 > a.text-white, .block-light .hover-a:hover .h6 > a.text-white {
+    color: #fff !important;
+}
+
+.block-light .sub-card ul li a {
+    color: #1b1b1b !important;
+}
+
+.block-light .sub-card ul li a:hover {
+    color: #f6f6f6 !important;
+}
+
+.block-dark a {
+    color: #1b1b1b;
+}
+
+.block-dark a:hover {
+    color: #1b1b1b !important;
+}
+
+.block-dark a.badge {
+    color: #fff !important;
+    background-color: #1b1b1b;
+}
+
+.block-dark a.btn:hover {
+    color: #fff !important;
+}
+
+.block-dark h1 > a, .block-dark h2 > a, .block-dark h3 > a, .block-dark h4 > a, .block-dark h5 > a, .block-dark h6 > a, .block-dark .h1 > a, .block-dark .h2 > a, .block-dark .h3 > a, .block-dark .h4 > a, .block-dark .h5 > a, .block-dark .h6 > a {
+    color: #1b1b1b;
+}
+
+.block-dark h1 > a:hover, .block-dark h2 > a:hover, .block-dark h3 > a:hover, .block-dark h4 > a:hover, .block-dark h5 > a:hover, .block-dark h6 > a:hover, .block-dark .h1 > a:hover, .block-dark .h2 > a:hover, .block-dark .h3 > a:hover, .block-dark .h4 > a:hover, .block-dark .h5 > a:hover, .block-dark .h6 > a:hover {
+    color: #1b1b1b !important;
+}
+
+.block-dark .hover-a:hover h1 > a, .block-dark .hover-a:hover h2 > a, .block-dark .hover-a:hover h3 > a, .block-dark .hover-a:hover h4 > a, .block-dark .hover-a:hover h5 > a, .block-dark .hover-a:hover h6 > a, .block-dark .hover-a:hover .h1 > a, .block-dark .hover-a:hover .h2 > a, .block-dark .hover-a:hover .h3 > a, .block-dark .hover-a:hover .h4 > a, .block-dark .hover-a:hover .h5 > a, .block-dark .hover-a:hover .h6 > a {
+    color: #1b1b1b !important;
+}
+
+.block-dark .hover-a:hover h1 > a.text-white, .block-dark .hover-a:hover h2 > a.text-white, .block-dark .hover-a:hover h3 > a.text-white, .block-dark .hover-a:hover h4 > a.text-white, .block-dark .hover-a:hover h5 > a.text-white, .block-dark .hover-a:hover h6 > a.text-white, .block-dark .hover-a:hover .h1 > a.text-white, .block-dark .hover-a:hover .h2 > a.text-white, .block-dark .hover-a:hover .h3 > a.text-white, .block-dark .hover-a:hover .h4 > a.text-white, .block-dark .hover-a:hover .h5 > a.text-white, .block-dark .hover-a:hover .h6 > a.text-white {
+    color: #fff !important;
+}
+
+.block-dark .sub-card ul li a {
+    color: #1b1b1b !important;
+}
+
+.block-dark .sub-card ul li a:hover {
+    color: #1b1b1b !important;
+}
+
+.block-pink a {
+    color: #d6456a;
+}
+
+.block-pink a:hover {
+    color: #d6456a !important;
+}
+
+.block-pink a.badge {
+    color: #fff !important;
+    background-color: #d6456a;
+}
+
+.block-pink a.btn:hover {
+    color: #fff !important;
+}
+
+.block-pink h1 > a, .block-pink h2 > a, .block-pink h3 > a, .block-pink h4 > a, .block-pink h5 > a, .block-pink h6 > a, .block-pink .h1 > a, .block-pink .h2 > a, .block-pink .h3 > a, .block-pink .h4 > a, .block-pink .h5 > a, .block-pink .h6 > a {
+    color: #1b1b1b;
+}
+
+.block-pink h1 > a:hover, .block-pink h2 > a:hover, .block-pink h3 > a:hover, .block-pink h4 > a:hover, .block-pink h5 > a:hover, .block-pink h6 > a:hover, .block-pink .h1 > a:hover, .block-pink .h2 > a:hover, .block-pink .h3 > a:hover, .block-pink .h4 > a:hover, .block-pink .h5 > a:hover, .block-pink .h6 > a:hover {
+    color: #d6456a !important;
+}
+
+.block-pink .hover-a:hover h1 > a, .block-pink .hover-a:hover h2 > a, .block-pink .hover-a:hover h3 > a, .block-pink .hover-a:hover h4 > a, .block-pink .hover-a:hover h5 > a, .block-pink .hover-a:hover h6 > a, .block-pink .hover-a:hover .h1 > a, .block-pink .hover-a:hover .h2 > a, .block-pink .hover-a:hover .h3 > a, .block-pink .hover-a:hover .h4 > a, .block-pink .hover-a:hover .h5 > a, .block-pink .hover-a:hover .h6 > a {
+    color: #d6456a !important;
+}
+
+.block-pink .hover-a:hover h1 > a.text-white, .block-pink .hover-a:hover h2 > a.text-white, .block-pink .hover-a:hover h3 > a.text-white, .block-pink .hover-a:hover h4 > a.text-white, .block-pink .hover-a:hover h5 > a.text-white, .block-pink .hover-a:hover h6 > a.text-white, .block-pink .hover-a:hover .h1 > a.text-white, .block-pink .hover-a:hover .h2 > a.text-white, .block-pink .hover-a:hover .h3 > a.text-white, .block-pink .hover-a:hover .h4 > a.text-white, .block-pink .hover-a:hover .h5 > a.text-white, .block-pink .hover-a:hover .h6 > a.text-white {
+    color: #fff !important;
+}
+
+.block-pink .sub-card ul li a {
+    color: #1b1b1b !important;
+}
+
+.block-pink .sub-card ul li a:hover {
+    color: #d6456a !important;
+}
+
+.block-purple a {
+    color: #7952B3;
+}
+
+.block-purple a:hover {
+    color: #7952B3 !important;
+}
+
+.block-purple a.badge {
+    color: #fff !important;
+    background-color: #7952B3;
+}
+
+.block-purple a.btn:hover {
+    color: #fff !important;
+}
+
+.block-purple h1 > a, .block-purple h2 > a, .block-purple h3 > a, .block-purple h4 > a, .block-purple h5 > a, .block-purple h6 > a, .block-purple .h1 > a, .block-purple .h2 > a, .block-purple .h3 > a, .block-purple .h4 > a, .block-purple .h5 > a, .block-purple .h6 > a {
+    color: #1b1b1b;
+}
+
+.block-purple h1 > a:hover, .block-purple h2 > a:hover, .block-purple h3 > a:hover, .block-purple h4 > a:hover, .block-purple h5 > a:hover, .block-purple h6 > a:hover, .block-purple .h1 > a:hover, .block-purple .h2 > a:hover, .block-purple .h3 > a:hover, .block-purple .h4 > a:hover, .block-purple .h5 > a:hover, .block-purple .h6 > a:hover {
+    color: #7952B3 !important;
+}
+
+.block-purple .hover-a:hover h1 > a, .block-purple .hover-a:hover h2 > a, .block-purple .hover-a:hover h3 > a, .block-purple .hover-a:hover h4 > a, .block-purple .hover-a:hover h5 > a, .block-purple .hover-a:hover h6 > a, .block-purple .hover-a:hover .h1 > a, .block-purple .hover-a:hover .h2 > a, .block-purple .hover-a:hover .h3 > a, .block-purple .hover-a:hover .h4 > a, .block-purple .hover-a:hover .h5 > a, .block-purple .hover-a:hover .h6 > a {
+    color: #7952B3 !important;
+}
+
+.block-purple .hover-a:hover h1 > a.text-white, .block-purple .hover-a:hover h2 > a.text-white, .block-purple .hover-a:hover h3 > a.text-white, .block-purple .hover-a:hover h4 > a.text-white, .block-purple .hover-a:hover h5 > a.text-white, .block-purple .hover-a:hover h6 > a.text-white, .block-purple .hover-a:hover .h1 > a.text-white, .block-purple .hover-a:hover .h2 > a.text-white, .block-purple .hover-a:hover .h3 > a.text-white, .block-purple .hover-a:hover .h4 > a.text-white, .block-purple .hover-a:hover .h5 > a.text-white, .block-purple .hover-a:hover .h6 > a.text-white {
+    color: #fff !important;
+}
+
+.block-purple .sub-card ul li a {
+    color: #1b1b1b !important;
+}
+
+.block-purple .sub-card ul li a:hover {
+    color: #7952B3 !important;
+}
+
+/*------------------------------------
+	Block title
+------------------------------------*/
+.block-title-1 h1, .block-title-1 h2, .block-title-1 h3, .block-title-1 h4, .block-title-1 h5, .block-title-1 h6, .block-title-6 h1 span, .block-title-6 h2 span, .block-title-6 h3 span, .block-title-6 h4 span, .block-title-6 h5 span, .block-title-6 h6 span, .block-title-14 h1 span, .block-title-14 h2 span, .block-title-14 h3 span, .block-title-14 h4 span, .block-title-14 h5 span, .block-title-14 h6 span, .center-backline span, .center-backline-lg span, .six-block-title span {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.center-backline:before, .center-backline-lg:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: 45%;
+    background-color: #6c63ff;
+    left: 0;
+    right: 0;
+}
+
+.center-backline span, .center-backline-lg span {
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.block-title-1 {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: #dee2e6 2px solid;
+}
+
+.block-title-1 h1, .block-title-1 h2, .block-title-1 h3, .block-title-1 h4, .block-title-1 h5, .block-title-1 h6 {
+    display: inline;
+}
+
+.block-title-2 {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: #dee2e6 2px solid;
+}
+
+.block-title-2 h1, .block-title-2 h2, .block-title-2 h3, .block-title-2 h4, .block-title-2 h5, .block-title-2 h6 {
+    display: inline;
+}
+
+.block-title-3 {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: #dee2e6 2px solid;
+}
+
+.block-title-3 h1, .block-title-3 h2, .block-title-3 h3, .block-title-3 h4, .block-title-3 h5, .block-title-3 h6 {
+    display: inline;
+}
+
+.block-title-4 {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: #dee2e6 2px solid;
+}
+
+.block-title-4 h1, .block-title-4 h2, .block-title-4 h3, .block-title-4 h4, .block-title-4 h5, .block-title-4 h6 {
+    display: inline;
+}
+
+.block-title-5 {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: #dee2e6 2px solid;
+}
+
+.block-title-5 h1, .block-title-5 h2, .block-title-5 h3, .block-title-5 h4, .block-title-5 h5, .block-title-5 h6 {
+    display: inline;
+}
+
+.block-title-5 h1 span, .block-title-5 h2 span, .block-title-5 h3 span, .block-title-5 h4 span, .block-title-5 h5 span, .block-title-5 h6 span {
+    padding-bottom: 0.45rem;
+    border-bottom: #dee2e6 2px solid;
+}
+
+.block-title-6 {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.block-title-6 h1, .block-title-6 h2, .block-title-6 h3, .block-title-6 h4, .block-title-6 h5, .block-title-6 h6 {
+    border-bottom: #dee2e6 2px solid;
+}
+
+.block-title-6 h1 span, .block-title-6 h2 span, .block-title-6 h3 span, .block-title-6 h4 span, .block-title-6 h5 span, .block-title-6 h6 span {
+    margin-bottom: -2px;
+    display: inline-block;
+    position: relative;
+}
+
+.block-title-7 {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.block-title-8 {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.block-title-8 h1 span, .block-title-8 h2 span, .block-title-8 h3 span, .block-title-8 h4 span, .block-title-8 h5 span, .block-title-8 h6 span {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    position: relative;
+    display: block;
+}
+
+.block-title-9 {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.block-title-9 h1 span, .block-title-9 h2 span, .block-title-9 h3 span, .block-title-9 h4 span, .block-title-9 h5 span, .block-title-9 h6 span {
+    padding-left: 1rem;
+    border-left: #dee2e6 5px solid;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    display: block;
+    position: relative;
+}
+
+.block-title-10 {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.block-title-10 h1 span, .block-title-10 h2 span, .block-title-10 h3 span, .block-title-10 h4 span, .block-title-10 h5 span, .block-title-10 h6 span {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    display: block;
+    position: relative;
+}
+
+.block-title-11 {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.block-title-11 h1 span, .block-title-11 h2 span, .block-title-11 h3 span, .block-title-11 h4 span, .block-title-11 h5 span, .block-title-11 h6 span {
+    padding-left: 0;
+}
+
+.block-title-12 {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.block-title-12 h1, .block-title-12 h2, .block-title-12 h3, .block-title-12 h4, .block-title-12 h5, .block-title-12 h6 {
+    float: left;
+    margin-right: 1rem;
+}
+
+.block-title-13 {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.block-title-13 h1, .block-title-13 h2, .block-title-13 h3, .block-title-13 h4, .block-title-13 h5, .block-title-13 h6 {
+    float: left;
+    margin-right: 1rem;
+}
+
+.block-title-14 {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.block-title-14 h1 span, .block-title-14 h2 span, .block-title-14 h3 span, .block-title-14 h4 span, .block-title-14 h5 span, .block-title-14 h6 span {
+    display: inline-block;
+    position: relative;
+}
+
+.block-title-15 {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.block-title-15 h1, .block-title-15 h2, .block-title-15 h3, .block-title-15 h4, .block-title-15 h5, .block-title-15 h6 {
+    border-bottom: #dee2e6 2px solid;
+}
+
+.center-backline:before {
+    margin-top: -.5px;
+    margin-bottom: 0;
+}
+
+.center-backline-lg:before {
+    margin-top: -0.5rem;
+}
+
+@media (max-width: 767.98px) {
+    .center-backline:before {
+        left: 5px;
+        right: 5px;
+    }
+}
+
+.title-box-stripe {
+    margin-top: -0.4rem;
+}
+
+.title-box-dot {
+    margin-top: -0.4rem;
+}
+
+.title-arrow:before {
+    content: '';
+    width: 2.5rem;
+    height: 2px;
+    position: absolute;
+    top: 2rem;
+    background: #6c63ff;
+}
+
+.u-backline:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #6c63ff;
+    margin-top: 1.5rem;
+}
+
+.box-title:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    bottom: -.5rem;
+    left: 50%;
+    border-top-color: #6c63ff;
+    border-width: 0.5rem;
+    border-bottom: 0;
+    margin-left: -10px;
+}
+
+.box-title.border-primary:before {
+    border-top-color: #6c63ff;
+}
+
+.box-title.border-secondary:before {
+    border-top-color: #000;
+}
+
+.box-title.border-success:before {
+    border-top-color: #00b191;
+}
+
+.box-title.border-info:before {
+    border-top-color: #17a2b8;
+}
+
+.box-title.border-warning:before {
+    border-top-color: #ffc107;
+}
+
+.box-title.border-danger:before {
+    border-top-color: #d72924;
+}
+
+.box-title.border-light:before {
+    border-top-color: #f6f6f6;
+}
+
+.box-title.border-dark:before {
+    border-top-color: #1b1b1b;
+}
+
+.box-title.border-pink:before {
+    border-top-color: #d6456a;
+}
+
+.box-title.border-purple:before {
+    border-top-color: #7952B3;
+}
+
+.six-block-title span {
+    margin-bottom: -2px;
+    display: inline-block;
+    position: relative;
+}
+
+
+/*------------------------------------
+	Card full
+------------------------------------*/
+.card-full {
+    background-color: transparent !important;
+    border: 0;
+}
+
+.card-full .card-title:last-child {
+    margin-bottom: 0;
+}
+
+.card-full .card-body {
+    padding: 0;
+    padding-top: 1rem;
+}
+
+.card-full .no-gutters .card-body {
+    padding: 1.25rem;
+}
+
+/*------------------------------------
+	Tipografia
+------------------------------------*/
+.h1 {
+    font-size: 1.5rem;
+}
+
+.h2 {
+    font-size: 1.375rem;
+}
+
+.h3 {
+    font-size: 1.25rem;
+}
+
+.h4 {
+    font-size: 1.125rem;
+}
+
+.h5 {
+    font-size: 1rem;
+}
+
+.h6 {
+    font-size: 0.875rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.display-1 {
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.display-2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.display-3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.display-4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+@media (min-width: 576px) {
+    .h1-sm {
+        font-size: 1.5rem;
+    }
+    .h2-sm {
+        font-size: 1.375rem;
+    }
+    .h3-sm {
+        font-size: 1.25rem;
+    }
+    .h4-sm {
+        font-size: 1.125rem;
+    }
+    .h5-sm {
+        font-size: 1rem;
+    }
+    .h6-sm {
+        font-size: 0.875rem;
+    }
+    .lead-sm {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+    .display-1-sm {
+        font-size: 3.6rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .display-2-sm {
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .display-3-sm {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .display-4-sm {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 768px) {
+    .h1-md {
+        font-size: 1.5rem;
+    }
+    .h2-md {
+        font-size: 1.375rem;
+    }
+    .h3-md {
+        font-size: 1.25rem;
+    }
+    .h4-md {
+        font-size: 1.125rem;
+    }
+    .h5-md {
+        font-size: 1rem;
+    }
+    .h6-md {
+        font-size: 0.875rem;
+    }
+    .lead-md {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+    .display-1-md {
+        font-size: 3.6rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .display-2-md {
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .display-3-md {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .display-4-md {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 992px) {
+    .h1-lg {
+        font-size: 1.5rem;
+    }
+    .h2-lg {
+        font-size: 1.375rem;
+    }
+    .h3-lg {
+        font-size: 1.25rem;
+    }
+    .h4-lg {
+        font-size: 1.125rem;
+    }
+    .h5-lg {
+        font-size: 1rem;
+    }
+    .h6-lg {
+        font-size: 0.875rem;
+    }
+    .lead-lg {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+    .display-1-lg {
+        font-size: 3.6rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .display-2-lg {
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .display-3-lg {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .display-4-lg {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 1200px) {
+    .h1-xl {
+        font-size: 1.5rem;
+    }
+    .h2-xl {
+        font-size: 1.375rem;
+    }
+    .h3-xl {
+        font-size: 1.25rem;
+    }
+    .h4-xl {
+        font-size: 1.125rem;
+    }
+    .h5-xl {
+        font-size: 1rem;
+    }
+    .h6-xl {
+        font-size: 0.875rem;
+    }
+    .lead-xl {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+    .display-1-xl {
+        font-size: 3.6rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .display-2-xl {
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .display-3-xl {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .display-4-xl {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .text-center-down {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .text-center-sm-down {
+        text-align: center;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .text-center-md-down {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .text-center-lg-down {
+        text-align: center;
+    }
+}
+
+.text-center-xl-down {
+    text-align: center;
+}
+
+/*------------------------------------
+	Popular post
+------------------------------------*/
+.post-number {
+    counter-reset: my-counter;
+}
+
+.post-number li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.5rem 1rem;
+}
+
+.post-number li a::before {
+    font-size: 2rem;
+    font-weight: 600;
+    counter-increment: my-counter;
+    content: counter(my-counter);
+    float: left;
+    color: #e0e0e0 !important;
+    width: 3rem;
+    margin-right: 0.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.post-number li:hover a::before {
+    color: #6c63ff !important;
+}
