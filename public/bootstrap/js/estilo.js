@@ -17,3 +17,13 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+$(document).ready(function () {
+    console.log("document is ready");
+    $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
+        $('.offcanvas-collapse').toggleClass('open')
+    })
+});
+window.onload = function () {
+    console.log("window is loaded");
+};
