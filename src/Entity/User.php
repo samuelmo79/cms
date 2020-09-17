@@ -58,6 +58,11 @@ class User implements UserInterface
      */
     private $dadosPessoais;
 
+    /**
+     * @ORM\Column(type="string", length=254, nullable=true)
+     */
+    private $tokenResetPassword;
+
     public function __construct()
     {
         $this->artigos = new ArrayCollection();
@@ -198,6 +203,18 @@ class User implements UserInterface
     public function setDadosPessoais(?DadosPessoais $dadosPessoais): self
     {
         $this->dadosPessoais = $dadosPessoais;
+
+        return $this;
+    }
+
+    public function getTokenResetPassword(): ?string
+    {
+        return $this->tokenResetPassword;
+    }
+
+    public function setTokenResetPassword(?string $tokenResetPassword): self
+    {
+        $this->tokenResetPassword = $tokenResetPassword;
 
         return $this;
     }
