@@ -35,6 +35,7 @@ class ResetaSenhaController extends AbstractController
                $em->persist($usuario);
                $em->flush();
                $this->enviarLink($usuario, $emailer);
+                $this->addFlash("success", "Foi enviado para seu e-mail o link para redefinição de senha.");
             } else {
                 $this->addFlash("warning", "O email informado não está correto ou não está cadastrado.");
                 return $this->redirectToRoute('usuario_reseta_senha');
