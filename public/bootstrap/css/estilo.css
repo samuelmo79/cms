@@ -6,19 +6,19 @@ html {
 }
 
 :root {
- --brown: #8B4513;
+ --primary: #007bff;
 }
 
 a {
-    color: #8B4513;
+    color: #007bff;
 }
 a:hover {
-    color: #CD853F;
+    color: #0069d9;
     text-decoration: none;
 }
 
 h1, h2, h3, h4 {
-    color: #8B4513;
+    color: #007bff;
     font-weight: 700;
 }
 
@@ -30,7 +30,7 @@ h1, h2, h3, h4 {
 	Color
 ------------------------------------*/
 a {
-    color: #6c63ff;
+    color: #007bff;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -225,7 +225,7 @@ p {
 
 .profile-card .profile-name {
     font-size: 1.2rem;
-    color: #8B4513;
+    color: #007bff;
     font-weight: 600;
     text-align: center;
 }
@@ -317,7 +317,7 @@ a.about-item-edit {
     color:#3a3b45!important
 }
 .text-brown {
-    color: #8B4513;
+    color: #007bff;
 }
 
 /*------------------------------------
@@ -701,11 +701,11 @@ body {
 }
 
 .block-primary a {
-    color: #6c63ff;
+    color: #007bff;
 }
 
 .block-primary a:hover {
-    color: #6c63ff !important;
+    color: #0069d9 !important;
 }
 
 .block-primary a.badge {
@@ -722,11 +722,11 @@ body {
 }
 
 .block-primary h1 > a:hover, .block-primary h2 > a:hover, .block-primary h3 > a:hover, .block-primary h4 > a:hover, .block-primary h5 > a:hover, .block-primary h6 > a:hover, .block-primary .h1 > a:hover, .block-primary .h2 > a:hover, .block-primary .h3 > a:hover, .block-primary .h4 > a:hover, .block-primary .h5 > a:hover, .block-primary .h6 > a:hover {
-    color: #6c63ff !important;
+    color: #007bff !important;
 }
 
 .block-primary .hover-a:hover h1 > a, .block-primary .hover-a:hover h2 > a, .block-primary .hover-a:hover h3 > a, .block-primary .hover-a:hover h4 > a, .block-primary .hover-a:hover h5 > a, .block-primary .hover-a:hover h6 > a, .block-primary .hover-a:hover .h1 > a, .block-primary .hover-a:hover .h2 > a, .block-primary .hover-a:hover .h3 > a, .block-primary .hover-a:hover .h4 > a, .block-primary .hover-a:hover .h5 > a, .block-primary .hover-a:hover .h6 > a {
-    color: #6c63ff !important;
+    color: #007bff !important;
 }
 
 .block-primary .hover-a:hover h1 > a.text-white, .block-primary .hover-a:hover h2 > a.text-white, .block-primary .hover-a:hover h3 > a.text-white, .block-primary .hover-a:hover h4 > a.text-white, .block-primary .hover-a:hover h5 > a.text-white, .block-primary .hover-a:hover h6 > a.text-white, .block-primary .hover-a:hover .h1 > a.text-white, .block-primary .hover-a:hover .h2 > a.text-white, .block-primary .hover-a:hover .h3 > a.text-white, .block-primary .hover-a:hover .h4 > a.text-white, .block-primary .hover-a:hover .h5 > a.text-white, .block-primary .hover-a:hover .h6 > a.text-white {
@@ -1722,5 +1722,5 @@ body {
 }
 
 .post-number li:hover a::before {
-    color: #6c63ff !important;
+    color: #007bff !important;
 }

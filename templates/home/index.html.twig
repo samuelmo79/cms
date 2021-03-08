@@ -26,7 +26,7 @@
                             <div class="card border-0 rounded-0 text-light overflow zoom">
                                 <div class="position-relative">
                                     <!--thumbnail img-->
-                                    <div class="ratio_left-cover-1 image-wrapper">
+                                    <div class="ratio_left-cover-1">
                                         <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
                                             <img class="img-fluid w-100"
                                                  src="https://bootstrap.news/source/img1.jpg"
@@ -80,7 +80,7 @@
                             <div class="card border-0 rounded-0 text-light overflow zoom">
                                 <div class="position-relative">
                                     <!--thumbnail img-->
-                                    <div class="ratio_left-cover-1 image-wrapper">
+                                    <div class="ratio_left-cover-1">
                                         <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
                                             <img class="img-fluid w-100"
                                                  src="https://bootstrap.news/source/img3.jpg"
@@ -154,7 +154,7 @@
                         <div class="card border-0 rounded-0 text-white overflow zoom">
                             <div class="position-relative">
                                 <!--thumbnail img-->
-                                <div class="ratio_right-cover-2 image-wrapper">
+                                <div class="ratio_right-cover-2">
                                     <a href="{{ path('ver_artigo', {'slug': destaque.slug}) }}">
                                         <img class="img-fluid"
                                              src="{{ asset('imagens/artigos/' ~ destaque.imagem) }}"
@@ -269,7 +269,7 @@
             <!--block title-->
             <div class="block-title-6">
                 <h4 class="h5 border-secondary">
-                    <span class="bg-secondary text-white">Últimos posts</span>
+                    <span class="bg-secondary text-white">Últimos posts da hora</span>
                 </h4>
             </div>
             {% for artigo in artigos %}
@@ -290,6 +290,7 @@
                         {% endautoescape %}
                     </div>
                 </div>
+                <hr>
             {% else %}
                 <div class="alert alert-primary" role="alert">
                     Nenhum registro encontrado.
