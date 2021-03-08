@@ -5,6 +5,7 @@ namespace App\AdminBundle\Controller;
 use App\Entity\Categoria;
 use App\Form\CategoriaType;
 use App\Repository\CategoriaRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -28,8 +29,10 @@ class CategoriaController extends AbstractController
     /**
      * @Route("/new", name="categoria_new", methods={"GET","POST"})
      */
-    public function new(Request $request): Response
+    public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
+        $categorias = $entityManager->getRepository(Categoria::class)->findAll();
+
         $categorium = new Categoria();
         $form = $this->createForm(CategoriaType::class, $categorium);
         $form->handleRequest($request);
@@ -45,6 +48,7 @@ class CategoriaController extends AbstractController
         return $this->render('@Admin/categoria/new.html.twig', [
             'categorium' => $categorium,
             'form' => $form->createView(),
+            'categorias' => $categorias
         ]);
     }
 
