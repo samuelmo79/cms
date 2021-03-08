@@ -1,10 +1,30 @@
 {% extends '@Admin/baseAdmin.html.twig' %}
 
-{% block title %}New Categoria{% endblock %}
+{% block title %}Nova Categoria{% endblock %}
 
 {% block bodyAdmin %}
     <h2>Nova Categoria</h2>
-
-    {{ include('@Admin/categoria/_form.html.twig') }}
-    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    {{ include('@Admin/categoria/_form.html.twig') }}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Categorias
+                </div>
+                <div class="card-body">
+                    {% for categoria in categorias %}
+                        <span class="badge badge-primary">{{ categoria.nome }}</span>
+                    {% else %}
+                        Nenhum registro encontrado
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
